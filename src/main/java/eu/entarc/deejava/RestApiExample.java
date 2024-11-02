@@ -24,13 +24,13 @@ public class RestApiExample {
     private static final String connectionId = "test";
     private static final String country = "AT";
     private static final String codingSchema = "NAT";
-    private static final String accountingPointId = "AT0020000000000000000000100341061";
+    private static final String accountingPointId = "AT0020000000000000000000100383465";
     private static final String tariffCode = "AWATTAR";
     private static final String aiidaPermissionId = "a3bb84ca-e0e1-4441-a95b-0c4c8c08f3d9";
     private static final String fromDt =
-            ZonedDateTime.of(2024, 10, 1, 0, 0, 0, 0, ZoneId.of("UTC")).toString().replace(
+            ZonedDateTime.of(2024, 11, 1, 0, 0, 0, 0, ZoneId.of("UTC")).toString().replace(
             "[UTC]", "");
-    private static final String toDt = ZonedDateTime.of(2024, 10, 15, 0, 0, 0, 0, ZoneId.of("UTC")).toString().replace(
+    private static final String toDt = ZonedDateTime.of(2024, 11, 2, 0, 0, 0, 0, ZoneId.of("UTC")).toString().replace(
             "[UTC]", "");
 
     public static void main(String[] args) throws IOException, InterruptedException {
