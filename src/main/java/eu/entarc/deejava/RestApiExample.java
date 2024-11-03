@@ -81,10 +81,10 @@ public class RestApiExample {
         HttpClient client = HttpClient.newHttpClient();
 
         // Build the URL with path parameters
-        //String url = String.format("https://data-api.entarc.eu/timeseriesWithPrice/%s/%s/%s/%s/%s/%s/AWATTAR",
-        //        connectionId, country, codingSchema, accountingPointId, fromDt, toDt);
-        String url = String.format("https://data-api.entarc.eu/timeseries/%s/%s/%s/%s/%s/%s",
-                connectionId, country, codingSchema, accountingPointId, fromDt, toDt);
+        //String url = String.format("https://data-api.entarc.eu/timeseriesWithPrice/%s/%s/%s/%s/%s/AWATTAR",
+        //        country, codingSchema, accountingPointId, fromDt, toDt);
+        String url = String.format("https://data-api.entarc.eu/timeseries/%s/%s/%s/%s/%s",
+                country, codingSchema, accountingPointId, fromDt, toDt);
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
